@@ -1,0 +1,610 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #F5F5F5
+  color: #000
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+button, .btn, .btn-primary
+  border: none
+  outline: none
+  box-sizing: border-box
+  padding: 5px
+  height: 32px
+  font-family: $default-font
+  font-size: 14px
+
+  border-radius: 5px
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn-accent
+  color: #FFFFFF
+  background: #19357F
+  box-shadow: 0 4px 16px rgba(25, 53, 127, 0.15)
+
+  &:hover, &:focus
+    background: $accent
+
+.btn-orange
+  border-radius: 10px
+  height: 32px
+  background: linear-gradient(180deg, #EC6E00 0%, #FF8B25 100%)
+  font-size: 14px
+  color: #fff
+
+  &:hover
+    background: linear-gradient(180deg, #FF8B25 0%, #EC6E00 100%)
+
+
+input, select, textarea
+  outline: none
+  box-sizing: border-box
+  font-family: $default-font
+  font-size: 12px
+  color: $accent
+  padding: 0 20px
+  width: 100%
+
+  &::placeholder
+    color: $accent
+
+label
+  width: 100%
+
+input
+  border: 1px solid #EC6E00
+    radius: 10px
+  height: 39px
+
+select
+  appearance: none
+  -webkit-appearance: none
+  border-radius: 10px
+  background: #fff url("../img/arrow-select.svg") no-repeat 94% center
+    size: 15px
+  padding: 0 24px 0 9px
+  height: 32px
+  border: none
+
+.fill-none
+  fill: none
+
+.icon-svg
+  width: 100%
+  height: 100%
+  display: inline-block
+
+h2
+  text-transform: uppercase
+  color: $text
+  font-size: 24px
+  font-weight: bold
+  margin: 0 0 23px
+
+.container
+  max-width: 1200px
+
+//header
+header
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
+  background: #fff
+  padding: 13px 0 20px
+  margin: 0 0 26px
+  .btn
+    height: 40px
+    padding: 7px 42px
+
+.header-content
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  height: 100%
+
+.nav-menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.nav-link
+  color: $text
+  font-size: 14px
+  font-weight: bold
+  padding: 0
+
+  &:hover
+    color: $accent
+
+.nav-item
+  margin: 0 20px 0 0
+
+  &:last-child
+    margin: 0
+
+.schedule
+  color: $accent
+  font-size: 14px
+  font-weight: bold
+
+.phone
+  color: $accent
+  font-size: 24px
+  font-weight: bold
+
+  &:hover
+    color: $text
+
+.form-search
+  position: relative
+
+  button
+    position: absolute
+    background: transparent
+    top: 50%
+    right: 10px
+    width: 20px
+    height: 20px
+    transform: translate(0, -50%)
+    padding: 0
+
+  input
+    border: 1px solid #19357F
+
+  .icon-svg
+    fill: $accent
+
+.search-section
+  margin: 0 0 40px
+
+//callback-wrapper
+.callback-item
+  background: linear-gradient(0deg, #19357F, #19357F), url("../img/bg1.png") no-repeat center
+    size: cover
+  background-blend-mode: soft-light, normal
+  box-shadow: 0 4px 16px rgba(25, 53, 127, 0.15)
+  border-radius: 5px
+  padding: 60px 79px 67px
+  min-height: 293px
+  position: relative
+  overflow: hidden
+  color: #fff
+
+  h3
+    font-size: 24px
+    font-weight: bold
+    text-transform: uppercase
+    margin: 0 0 27px
+
+  .btn
+    max-width: 179px
+    width: 100%
+
+.callback-item-two
+  background: linear-gradient(0deg, #19357F, #19357F), url("../img/bg2.png") no-repeat center
+    size: cover
+
+.form-sorting
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  flex-wrap: wrap
+
+.label-select
+  max-width: 119px
+  width: 100%
+  margin: 0 7px 39px 0
+
+.callback-item__wrap
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  font-size: 12px
+
+.callback-item__text
+  max-width: 179px
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  p
+    max-width: 150px
+    width: 100%
+    margin: 0 0 auto
+
+.list-cat
+  margin: 0 0 0 39px
+
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 15px
+
+    &:last-child
+      margin: 0
+
+
+.cat-icon
+  max-width: 30px
+  max-height: 19px
+  margin: 0 15px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .icon-svg
+    fill: #fff
+
+.cat-icon1
+  width: 30px
+  height: 7px
+  margin: 0 15px 0 -12px
+
+.cat-icon2
+  width: 18px
+  height: 14px
+
+.cat-icon3
+  width: 15px
+  height: 18px
+
+.cat-icon4
+  width: 19px
+  height: 19px
+
+//about
+.about
+  margin: 71px 0 81px
+
+  .btn
+    max-width: 175px
+    width: 100%
+    margin: 40px 0 0
+
+  .img-wrapper
+    max-height: 250px
+
+.box-text
+  line-height: 17px
+  font-size: 14px
+
+.img-wrapper
+  border-radius: 10px
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    width: 100%
+
+//.advantages
+.mb-50
+  margin-bottom: 50px
+
+
+//for-a-hundred
+.for-a-hundred
+  margin: 86px 0 105px
+
+.advantages-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  justify-content: center
+  font-size: 18px
+
+.advantages-box__icon
+  border: 3px solid #FF8B25
+    radius: 50%
+  width: 88px
+  height: 88px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 18px
+  margin: 0 auto 16px
+
+  .icon-svg
+    fill: $accent
+
+.advantages
+  h2
+    margin: 0 auto 52px
+
+.callback-box
+  background: #fff
+  box-shadow: 0px 4px 16px rgba(25, 53, 127, 0.15)
+  border-radius: 10px
+  display: flex
+  align-items: center
+  padding: 31px 20px 42px 24px
+
+  h3
+    text-transform: uppercase
+    font-size: 24px
+    font-weight: bold
+    color: $text
+    max-width: 300px
+    width: 100%
+
+.form
+  width: calc(100% - 300px)
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-wrap: wrap
+
+  label
+    max-width: 178px
+    margin: 0 20px 0 0
+
+  button
+    height: 40px
+    max-width: 178px
+    width: 100%
+
+//reviews
+.reviews
+  padding: 18px 0
+  background: linear-gradient(0deg, #19357F, #19357F), url("../img/bg3.png") no-repeat center
+    size: cover
+  background-blend-mode: soft-light, normal
+
+  h2
+    color: #fff
+    margin: 0 auto 32px
+
+.reviews-box
+  background: #fff
+  padding: 31px 35px 25px 20px
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+  max-width: 278px
+  width: 100%
+  margin: 0 19px 48px 0
+
+  &:last-child
+    margin: 0 0 48px
+
+  h3
+    font-size: 18px
+    font-weight: bold
+    color: #000
+
+.reviews-box__body
+  color: #19357F
+  font-size: 14px
+
+.reviews-box__head
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 28px
+
+.reviews-box__photo
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  width: 59px
+  height: 59px
+  min-width: 59px
+  margin: 0 14px 0 0
+
+.reviews-wrapper
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: center
+
+//footer
+footer
+  padding: 33px 0 0
+  color: #fff
+  background: $text
+  font-size: 14px
+
+  .phone
+    color: #fff
+    font-size: 18px
+    margin: 0 0 4px
+
+    &:hover
+      color: $accent
+
+  .schedule
+    margin: 0 0 58px
+
+    span
+      font-weight: normal
+
+    p
+      color: #fff
+
+.mail
+  margin: 43px 0
+  font-size: 14px
+  color: $accent
+
+  &:hover
+    color: #fff
+
+.menu-footer
+  li
+    margin: 0 0 7px
+
+    &:last-child
+      margin: 0
+
+    a
+      color: #fff
+
+      &:hover
+        color: $accent
+
+.map
+  width: 100%
+  height: 100%
+  border-radius: 10px 10px 0px 0px
+  overflow: hidden
+
+  iframe
+    width: 100%
+    height: 100%
+
+.btn-burger
+  width: 20px
+  height: 14px
+  justify-content: space-between
+  align-items: center
+  display: none
+  flex-direction: column
+
+  span
+    display: block
+    width: 100%
+    height: 2px
+    background: $accent
+
+.mobile-menu
+  display: none
+  width: 100%
+  max-width: 300px
+  padding: 30px
+  position: fixed
+  left: 0
+  top: 0
+  height: 100%
+  overflow-y: auto
+  background: #fff
+  z-index: 5
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
+  .logo
+    margin: 0 auto 20px
+    justify-content: center
+    align-items: center
+    display: flex
+  .nav-menu
+    flex-direction: column
+    align-items: flex-start
+  .nav-item
+    margin: 0 0 10px
+  .schedule
+    margin: 0 0 30px
+
+.btn-close
+  position: relative
+  margin: 0 0 20px auto
+  width: 20px
+  height: 20px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: $accent
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+
+@import "media"
+// Всегда в конце
