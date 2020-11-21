@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>PST service</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+    <div class="btn-close"></div>
+
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+    <div class="schedule">Пн-Пт: 9.30 - 18.00</div>
+
+    <ul class="nav-menu">
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">О компании</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="sales.html">Акции</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="delivery.html">Доставка и оплата</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+        </li>
+    </ul>
+</div>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-sm-3 col-lg-2">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            </div>
+
+            <div class="col-8 col-sm-9 col-lg-10">
+                <div class="header-content">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sales.html">Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="delivery.html">Доставка и оплата</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="schedule">Пн-Пт: 9.30 - 18.00</div>
+
+                    <a href="tel:+78412706806" class="phone">+7 (8412) 706-806</a>
+
+                    <button type="button" class="btn btn-primary btn-accent" data-toggle="modal" data-target="#modal1">
+                        обратный звонок
+                    </button>
+
+                    <div class="btn-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-3">
+                <h1>Контакты</h1>
+
+                <a href="tel:+78412706806" class="phone">+7 (8412) 706 806</a>
+                <a href="tel:+78412792266" class="phone">+7 (8412) 79 22 66</a>
+                <a href="tel:+79022092266" class="phone">+7 (902) 209 22 66</a>
+
+                <a href="mailto:info@pstrussia.ru" class="mail">info@pstrussia.ru</a>
+
+                <div class="schedule">
+                    <p>Пенза, ул. Строителей д. 4</p>
+                    <span>Пн-Пт: 9.30 - 18.00</span>
+                </div>
+
+                <div class="social-wrapper">
+                    <p>Мы в соцсетях</p>
+
+                    <ul class="list-social">
+                        <li><a href="#" class="link-vk"><svg class="icon-svg"><use xlink:href="img/sprite.svg#vk"></use></svg></a></li>
+                        <li><a href="#" class="link-inst"><svg class="icon-svg"><use xlink:href="img/sprite.svg#instagram"></use></svg></a></li>
+                        <li><a href="#" class="link-fb"><svg class="icon-svg"><use xlink:href="img/sprite.svg#fb"></use></svg></a></li>
+                        <li><a href="#" class="link-ok"><svg class="icon-svg"><use xlink:href="img/sprite.svg#ok"></use></svg></a></li>
+                    </ul>
+                </div>
+
+                <div class="callback-box">
+                    <h3>Закажите бесплатный
+                        звонок для консультации</h3>
+
+                    <form method="post" class="form">
+                        <label><input type="text" name="name" placeholder="имя"></label>
+                        <label><input type="text" name="phone" placeholder="телефон" required></label>
+                        <button type="submit" class="btn btn-primary btn-accent">заказать звонок</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-7 col-lg-8 offset-lg-1">
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUAjWC5WC"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="modal1" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="staticBackdropLabel">Заказать звонок</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form">
+                    <label><input type="text" name="name" placeholder="имя"></label>
+                    <label><input type="text" name="phone" placeholder="телефон" required></label>
+                    <button type="submit" class="btn btn-primary btn-accent">заказать звонок</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -844,11 +844,119 @@ footer {
     margin: 20px 0 0;
     font-weight: bold; }
 
+.contacts {
+  margin: 54px 0 60px; }
+  .contacts h1 {
+    text-align: left;
+    margin: 0 0 48px; }
+  .contacts .phone {
+    font-size: 35px;
+    color: #19357F; }
+  .contacts .mail {
+    font-size: 36px;
+    margin: 48px 0 42px; }
+  .contacts .schedule {
+    font-size: 24px; }
+    .contacts .schedule span {
+      font-weight: normal; }
+    .contacts .schedule p {
+      color: #19357F;
+      margin: 0 0 15px; }
+  .contacts .callback-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 19px 51px 28px 46px; }
+    .contacts .callback-box h3 {
+      margin: 0 0 17px; }
+  .contacts .form {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .contacts .form input {
+      font-size: 18px; }
+    .contacts .form label {
+      max-width: none;
+      margin: 0 0 13px; }
+    .contacts .form button {
+      margin: 4px auto 0; }
+  .contacts .map {
+    border-radius: 10px; }
+
+.social-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 35px 0 56px;
+  font-size: 18px; }
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-social li {
+    margin: 0 18px 0 0; }
+    .list-social li:last-child {
+      margin: 0; }
+    .list-social li a {
+      width: 27px;
+      height: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .list-social li .icon-svg {
+      fill: #19357F; }
+    .list-social li .link-inst {
+      width: 20px;
+      height: 19px; }
+    .list-social li .link-fb {
+      width: 10px;
+      height: 19px; }
+    .list-social li .link-ok {
+      width: 12px;
+      height: 19px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .callback-item {
-    padding: 60px 40px 67px; } }
+    padding: 60px 40px 67px; }
+  .contacts .phone, .contacts .mail {
+    font-size: 28px; }
+  .contacts .mail {
+    margin: 30px 0; }
+  .contacts .schedule {
+    font-size: 18px; }
+  .contacts .callback-box {
+    padding: 20px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px) {
@@ -975,7 +1083,21 @@ footer {
       border-bottom: 1px solid #19357F;
     margin: 0 0 20px; }
   .terms-of-payment__box .box-text, .delivery-price .box-text {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .social-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .social-wrapper p {
+      margin: 0 20px 0 0; }
+  .contacts h1 {
+    margin: 0 0 30px; }
+  .contacts .callback-box {
+    margin: 0 0 30px; }
+  .social-wrapper {
+    margin: 20px 0 30px; }
+  .contacts .phone, .contacts .mail {
+    font-size: 24px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
