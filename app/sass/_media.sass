@@ -132,11 +132,31 @@
   .map
     height: 250px
 
+  .sale-box
+    font-size: 18px
+    h3
+      font-size: 40px
+    p
+      font-size: 30px
+
+  .date
+    margin: 20px 0 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
   header
     .schedule, .btn
       display: none
+
+  .sale-box
+    min-height: 200px
+    h3
+      font-size: 30px
+    p
+      font-size: 24px
+
+  .sales
+    margin: 40px 0 50px
 
 
 @media only screen and (max-width : 480px)
@@ -159,6 +179,16 @@
       display: flex
     .schedule
       margin: 0 0 20px
+
+  .sale-box
+    padding: 30px
+    &:before
+      background: linear-gradient(90deg, #19357F 10%, rgba(25, 53, 127, 0) 95.45%)
+    p
+      font-size: 20px
+
+  .sales .callback-box
+    margin: 30px 0 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

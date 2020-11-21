@@ -445,7 +445,7 @@
             <div class="col-6 col-sm-4 col-lg-2">
                 <ul class="menu-footer">
                     <li><a href="about.html">О компании</a></li>
-                    <li><a href="sale.html">Акции</a></li>
+                    <li><a href="sales.html">Акции</a></li>
                     <li><a href="delivery.html">Доставка и оплата</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
@@ -459,6 +459,28 @@
         </div>
     </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modal1" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="staticBackdropLabel">Заказать звонок</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form">
+                    <label><input type="text" name="name" placeholder="имя"></label>
+                    <label><input type="text" name="phone" placeholder="телефон" required></label>
+                    <button type="submit" class="btn btn-primary btn-accent">заказать звонок</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 <script src="js/jquery.min.js"></script>

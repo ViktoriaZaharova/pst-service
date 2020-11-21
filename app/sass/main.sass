@@ -164,6 +164,15 @@ select
   height: 100%
   display: inline-block
 
+h1
+  width: 100%
+  text-align: center
+  margin: 0 auto 27px
+  font-size: 36px
+  font-weight: bold
+  text-transform: uppercase
+  color: $text
+
 h2
   text-transform: uppercase
   color: $text
@@ -173,6 +182,8 @@ h2
 
 .container
   max-width: 1200px
+
+
 
 //header
 header
@@ -604,6 +615,85 @@ footer
     transform: rotate(45deg)
   &:after
     transform: rotate(135deg)
+
+//sales
+.sales
+  margin: 54px 0 92px
+  .callback-box
+    margin: 55px 0 0
+
+.sale-box
+  width: 100%
+  position: relative
+  overflow: hidden
+  border-radius: 10px
+  min-height: 275px
+  padding: 39px 36px 52px
+  font-size: 24px
+  color: #fff
+  >*
+    position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(90deg, #19357F 0%, rgba(25, 53, 127, 0) 72.45%)
+    z-index: 1
+  h3
+    font-size: 64px
+    font-weight: bold
+    text-transform: uppercase
+  p
+    font-size: 36px
+    font-weight: bold
+
+.date
+  margin: 33px 0 0
+
+.sale-box__content
+  position: relative
+  z-index: 1
+
+.sale-box__bg
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.mb-30
+  margin-bottom: 30px
+
+.modal-header
+  border: none
+  h2
+    text-align: center
+  .close
+    position: absolute
+    padding: 0
+    right: 10px
+    top: 10px
+    margin: 0
+
+.modal-title
+  margin: 0 auto
+
+.modal
+  form
+    max-width: 300px
+    margin: 0 auto
+    width: 100%
+    label
+      max-width: none
+      margin: 0 0 10px
+      width: 100%
+    button
+      margin: 0 auto
 
 
 @import "media"
