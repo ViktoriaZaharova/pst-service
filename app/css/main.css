@@ -784,6 +784,66 @@ footer {
   .modal form button {
     margin: 0 auto; }
 
+.delivery {
+  margin: 54px 0 0; }
+  .delivery .callback-box {
+    margin: 0; }
+
+.delivery-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.delivery-content .box-text {
+  color: #000000;
+  font-size: 18px;
+  line-height: normal; }
+
+.delivery-content h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  color: #19357F;
+  margin: 0 0 10px; }
+
+.delivery-price {
+  margin: 12px 0 51px; }
+  .delivery-price h2 {
+    border-right: 1px solid #19357F;
+    margin: 0; }
+  .delivery-price .box-text {
+    font-size: 18px;
+    line-height: normal; }
+
+.terms-of-payment {
+  margin: 0 0 69px; }
+  .terms-of-payment h2 {
+    margin: 0 0 22px; }
+
+.terms-of-payment__box {
+  margin: 0 0 32px; }
+  .terms-of-payment__box h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .terms-of-payment__box .box-text {
+    font-size: 18px;
+    line-height: normal; }
+    .terms-of-payment__box .box-text p {
+      margin: 0 0 20px; }
+      .terms-of-payment__box .box-text p:last-child {
+        margin: 0; }
+  .terms-of-payment__box h4 {
+    margin: 20px 0 0;
+    font-weight: bold; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -909,7 +969,13 @@ footer {
     .sale-box p {
       font-size: 30px; }
   .date {
-    margin: 20px 0 0; } }
+    margin: 20px 0 0; }
+  .delivery-price h2 {
+    border: none;
+      border-bottom: 1px solid #19357F;
+    margin: 0 0 20px; }
+  .terms-of-payment__box .box-text, .delivery-price .box-text {
+    font-size: 16px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -922,7 +988,16 @@ footer {
     .sale-box p {
       font-size: 24px; }
   .sales {
-    margin: 40px 0 50px; } }
+    margin: 40px 0 50px; }
+  .delivery-icon {
+    max-width: 200px;
+    margin: 0 auto 20px; }
+  .delivery-content .box-text {
+    font-size: 16px; }
+  .delivery-content h3 {
+    text-align: center; }
+    .delivery-content h3 br {
+      display: none; } }
 
 @media only screen and (max-width: 480px) {
   header {
