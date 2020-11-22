@@ -114,6 +114,7 @@ button, .btn, .btn-primary
 
   &:hover, &:focus
     background: $accent
+    color: #fff
 
 .btn-orange
   border-radius: 10px
@@ -184,13 +185,13 @@ h2
   max-width: 1200px
 
 
-
 //header
 header
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
   background: #fff
   padding: 13px 0 20px
   margin: 0 0 26px
+
   .btn
     height: 40px
     padding: 7px 42px
@@ -431,6 +432,7 @@ header
     color: $text
     max-width: 300px
     width: 100%
+
   input
     font-size: 18px
 
@@ -587,16 +589,20 @@ footer
   background: #fff
   z-index: 5
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
+
   .logo
     margin: 0 auto 20px
     justify-content: center
     align-items: center
     display: flex
+
   .nav-menu
     flex-direction: column
     align-items: flex-start
+
   .nav-item
     margin: 0 0 10px
+
   .schedule
     margin: 0 0 30px
 
@@ -605,6 +611,7 @@ footer
   margin: 0 0 20px auto
   width: 20px
   height: 20px
+
   &:before, &:after
     content: ''
     position: absolute
@@ -613,14 +620,17 @@ footer
     width: 2px
     height: 100%
     background: $accent
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
 //sales
 .sales
   margin: 54px 0 92px
+
   .callback-box
     margin: 55px 0 0
 
@@ -633,8 +643,10 @@ footer
   padding: 39px 36px 52px
   font-size: 24px
   color: #fff
-  >*
+
+  > *
     position: relative
+
   &:before
     content: ''
     position: absolute
@@ -644,10 +656,12 @@ footer
     height: 100%
     background: linear-gradient(90deg, #19357F 0%, rgba(25, 53, 127, 0) 72.45%)
     z-index: 1
+
   h3
     font-size: 64px
     font-weight: bold
     text-transform: uppercase
+
   p
     font-size: 36px
     font-weight: bold
@@ -663,7 +677,7 @@ footer
   position: absolute
   top: 50%
   left: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%)
   width: 100%
   height: 100%
   object-fit: cover
@@ -673,8 +687,10 @@ footer
 
 .modal-header
   border: none
+
   h2
     text-align: center
+
   .close
     position: absolute
     padding: 0
@@ -690,16 +706,19 @@ footer
     max-width: 300px
     margin: 0 auto
     width: 100%
+
     label
       max-width: none
       margin: 0 0 10px
       width: 100%
+
     button
       margin: 0 auto
 
 //.delivery
 .delivery
   margin: 54px 0 0
+
   .callback-box
     margin: 0
 
@@ -714,6 +733,7 @@ footer
     color: #000000
     font-size: 18px
     line-height: normal
+
   h3
     text-transform: uppercase
     font-size: 24px
@@ -723,32 +743,40 @@ footer
 
 .delivery-price
   margin: 12px 0 51px
+
   h2
     border-right: 1px solid #19357F
     margin: 0
+
   .box-text
     font-size: 18px
     line-height: normal
 
 .terms-of-payment
   margin: 0 0 69px
+
   h2
     margin: 0 0 22px
 
 .terms-of-payment__box
   margin: 0 0 32px
+
   h3
     margin: 0 0 6px
     font-size: 18px
     font-weight: bold
     text-transform: uppercase
+
   .box-text
     font-size: 18px
     line-height: normal
+
     p
       margin: 0 0 20px
+
       &:last-child
         margin: 0
+
   h4
     margin: 20px 0 0
     font-weight: bold
@@ -757,39 +785,52 @@ footer
 //contacts
 .contacts
   margin: 54px 0 60px
+
   h1
     text-align: left
     margin: 0 0 48px
+
   .phone
     font-size: 35px
     color: $text
+
   .mail
     font-size: 36px
     margin: 48px 0 42px
+
   .schedule
     font-size: 24px
+
     span
       font-weight: normal
+
     p
       color: $text
       margin: 0 0 15px
+
   .callback-box
     flex-direction: column
     align-items: flex-start
     padding: 19px 51px 28px 46px
+
     h3
       margin: 0 0 17px
+
   .form
     width: 100%
     flex-direction: column
     align-items: flex-start
+
     input
       font-size: 18px
+
     label
       max-width: none
       margin: 0 0 13px
+
     button
       margin: 4px auto 0
+
   .map
     border-radius: 10px
 
@@ -806,24 +847,31 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
+
   li
     margin: 0 18px 0 0
+
     &:last-child
       margin: 0
+
     a
       width: 27px
       height: 15px
       display: flex
       align-items: center
       justify-content: center
+
     .icon-svg
       fill: $text
+
     .link-inst
       width: 20px
       height: 19px
+
     .link-fb
       width: 10px
       height: 19px
+
     .link-ok
       width: 12px
       height: 19px
@@ -831,14 +879,17 @@ footer
 //.catalog
 .catalog
   margin: 86px 0 96px
+
   h2
     margin: 0 0 32px
 
 .list-category
   li
     margin: 0 0 30px
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
@@ -851,14 +902,18 @@ footer
       font-weight: bold
       color: $text
       padding: 0 18px
+
       &:hover
         color: #fff
         background: linear-gradient(180deg, #19357F 1.04%, #001D69 100%)
+
         .icon-svg
           fill: #fff
+
     .active
       color: #fff
       background: linear-gradient(180deg, #19357F 1.04%, #001D69 100%)
+
       .icon-svg
         fill: #fff
 
@@ -893,24 +948,31 @@ footer
   align-items: flex-start
   justify-content: space-between
   flex-wrap: wrap
+
   .form-sorting
     width: auto
     justify-content: space-between
     flex-wrap: nowrap
+
     label
       width: 135px
       min-width: 135px
       margin: 0 7px 0 0
+
       &:last-child
         margin: 0
+
     button
       width: 80px
       margin: 0 0 0 13px
+
   .label-select
     margin: 0
     max-width: 135px
+
   .btn
     border-radius: 5px
+
   select
     border-radius: 5px
     font-size: 12px
@@ -920,10 +982,12 @@ footer
   align-items: center
   justify-content: space-between
   font-size: 14px
+
   .label-select
     width: 178px
     min-width: 178px
     margin: 0 0 0 30px
+
   select
     font-size: 12px
 
@@ -995,16 +1059,20 @@ footer
 .btn-group
   width: 100%
   justify-content: space-between
+
   .btn
     max-width: 80px
     height: 32px
     width: 100%
     border-radius: 5px
     margin: 7px 0 0
+
     &:hover
       color: #fff
+
     &:last-child, &:first-child
       border-radius: 5px
+
     &:not(:last-child):not(.dropdown-toggle)
       border-radius: 5px
 
@@ -1023,10 +1091,12 @@ footer
   font-size: 14px
   max-width: 250px
   width: 100%
+
   li
     display: flex
     align-items: center
     justify-content: space-between
+
   span
     text-align: left
     min-width: 100px
@@ -1040,6 +1110,7 @@ footer
 
 .page-item
   margin: 0 5px 0 0
+
   &:last-child
     margin: 0
 
@@ -1058,9 +1129,214 @@ footer
   font-size: 24px
   font-weight: bold
   text-transform: uppercase
+
   &:hover
     background: transparent
     color: $accent
+
+//.product
+.product
+  margin: 54px 0 29px
+  .name-product
+    width: 100%
+  .card-product__body
+    padding: 0
+    width: 100%
+
+
+.product-info__bottom
+  border-top: 1px solid $text
+  margin: 22px 0 0
+  padding: 21px 0 0
+
+  h4
+    text-transform: uppercase
+    color: $accent
+    font-weight: bold
+    font-size: 10px
+    margin: 0 0 9px
+
+.additionally-box
+  color: $text
+
+  p
+    font-size: 10px
+
+    display: flex
+    align-items: center
+
+    span
+      margin: 0 0 0 3px
+
+.sum
+  font-size: 18px
+  font-weight: bold
+  text-transform: uppercase
+
+.product-photo
+  border-radius: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+
+  img
+    width: 100%
+
+.application-product, .application-product__text
+  margin: 43px 0 80px
+
+.application-product
+  border-right: 1px solid #19357F
+  padding: 0 64px 0 0
+
+.application-product__text
+  font-size: 18px
+  line-height: 22px
+
+  ul
+    margin: 20px 0
+
+.application-product__item
+  font-size: 18px
+  margin: 0 0 25px
+
+  &:last-child
+    margin: 0
+
+  .text
+    color: $text
+
+  h5
+    margin: 0 0 10px
+
+  h6
+    font-weight: bold
+    margin: 0 0 10px
+    color: $text
+
+//analogs
+.analogs
+  h3
+    color: $accent
+    text-transform: uppercase
+    font-weight: bold
+    margin: 0 0 15px
+    font-size: 18px
+
+.analogs-box
+  width: 100%
+  background: #ffffff
+  border-radius: 10px
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 19px
+  box-shadow: 0px 4px 16px rgba(25, 53, 127, 0.15)
+  padding: 15px 20px
+
+  .btn
+    max-width: 80px
+    width: 100%
+
+.analogs-box__name
+  text-transform: uppercase
+  color: $text
+  font-weight: bold
+  font-size: 14px
+
+.analogs-box__head
+  width: 80px
+
+.analogs-box__body
+  width: calc(100% - 80px - 265px)
+  padding: 0 0 0 20px
+
+.analogs-box__code
+  font-size: 14px
+  max-width: 110px
+  width: 100%
+
+.analogs-box__footer
+  width: 265px
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+
+
+.analogs-box__price
+  padding: 0 22px
+  font-size: 24px
+  color: $text
+  font-weight: bold
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  border:
+    left: 1px solid $text
+    right: 1px solid $text
+
+//.recommended
+.recommended
+  margin: 50px 0 67px
+  .btn
+    width: 100%
+
+  h2
+    margin: 0 0 59px
+
+.recommended-card
+  background: #fff
+  border-radius: 10px
+  min-height: 486px
+  height: 100%
+  padding: 13px 12px 20px
+  overflow: hidden
+  font-size: 14px
+  display: flex
+  flex-direction: column
+  .btn
+    max-width: 80px
+    margin: 0 auto
+
+.recommended-card__img
+  border-radius: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 248px
+  width: 100%
+  overflow: hidden
+  img
+    width: 100%
+
+.recommended-card__body
+  height: calc(100% - 248px)
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding: 18px 0 0
+
+.recommended-card__title
+  text-align: center
+  text-transform: uppercase
+  color: $text
+  font-weight: bold
+  font-size: 18px
+  margin: 0 auto 20px
+
+.recommended-card__description
+  text-align: center
+  width: 100%
+
+.recommended-card__price
+  text-align: center
+  font-size: 18px
+  margin: auto auto 16px
+  text-transform: uppercase
+  font-weight: bold
+  color: $text
 
 @import "media"
 // Всегда в конце

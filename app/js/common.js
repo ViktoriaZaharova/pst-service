@@ -5,3 +5,5 @@ $('.btn-close').click(function () {
 $('.btn-burger').click(function () {
     $('.mobile-menu').fadeToggle();
 });
+
+$('[name="phone"]').mask('+7 (999) 999 99 99')
