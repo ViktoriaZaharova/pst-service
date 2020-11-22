@@ -19,6 +19,15 @@
   .contacts .callback-box
     padding: 20px
 
+  .list-category li a
+    font-size: 20px
+
+  .sorting-item
+    width: 100%
+    max-width: none
+    margin: 10px 0 0
+    justify-content: flex-start
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px)
   .phone
@@ -71,6 +80,15 @@
 
   .for-a-hundred
     margin: 40px 0
+
+  .catalog
+    margin: 30px 0 40px
+
+  .list-category
+    margin: 0 0 30px
+    li
+      margin: 0 0 20px
+
 
 @media only screen and (max-width : 850px)
   .label-select
@@ -178,7 +196,36 @@
   .contacts .phone, .contacts .mail
     font-size: 24px
 
-/* Extra Small Devices, Phones */
+  .card-product__body
+    padding: 0 0 0 20px
+    width: calc(100% - 175px - 100px)
+
+  .card-product__head
+    width: 100px
+    height: 100px
+    min-width: 100px
+
+  .status-availability
+    font-size: 20px
+
+  .price
+    font-size: 22px
+
+  .code-product
+    font-size: 16px
+    margin: 10px 0 12px
+
+  .name-product
+    font-size: 20px
+
+  .card-product
+    padding: 23px 30px
+
+  .catalog-filter .form-sorting
+    max-width: none
+    width: 100%
+    margin: 0 0 10px
+
 @media only screen and (max-width : 575px)
   header
     .schedule, .btn
@@ -205,6 +252,27 @@
       text-align: center
       br
         display: none
+
+  .card-product
+    flex-direction: column
+    align-items: center
+
+  .card-product__body
+    padding: 0
+    width: 100%
+    margin: 20px auto
+
+  .list-characteristics
+    margin: 0 auto
+
+  .name-product
+    text-align: center
+
+  .code-product
+    text-align: center
+
+  .status-availability, .price
+    text-align: center
 
 
 @media only screen and (max-width : 480px)
@@ -237,6 +305,33 @@
 
   .sales .callback-box
     margin: 30px 0 0
+
+  .catalog-filter .form-sorting label
+    width: 49%
+    min-width: auto
+    max-width: none
+    margin: 0
+
+  .catalog-filter .form-sorting
+    flex-wrap: wrap
+
+  .btn-search-code
+    margin: 0 auto
+
+  .catalog-filter .form-sorting button
+    margin: 10px auto 0
+    width: 100%
+    max-width: 178px
+    min-width: auto
+
+  .pagination
+    margin: 20px 0 30px
+
+  .attention
+    margin: 20px 0 0
+
+  .list-category li a
+    font-size: 18px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

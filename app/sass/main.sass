@@ -431,6 +431,8 @@ header
     color: $text
     max-width: 300px
     width: 100%
+  input
+    font-size: 18px
 
 .form
   width: calc(100% - 300px)
@@ -826,6 +828,239 @@ footer
       width: 12px
       height: 19px
 
+//.catalog
+.catalog
+  margin: 86px 0 96px
+  h2
+    margin: 0 0 32px
+
+.list-category
+  li
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+    a
+      display: flex
+      align-items: center
+      width: 100%
+      box-shadow: 0px 4px 16px rgba(25, 53, 127, 0.15)
+      border-radius: 10px
+      background: #FFFFFF
+      min-height: 60px
+      font-size: 24px
+      font-weight: bold
+      color: $text
+      padding: 0 18px
+      &:hover
+        color: #fff
+        background: linear-gradient(180deg, #19357F 1.04%, #001D69 100%)
+        .icon-svg
+          fill: #fff
+    .active
+      color: #fff
+      background: linear-gradient(180deg, #19357F 1.04%, #001D69 100%)
+      .icon-svg
+        fill: #fff
+
+
+.list-category__icon
+  fill: $text
+  transition: .3s ease
+  margin: 0 28px 0 0
+  width: 54px
+  height: 37px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.list-category__icon1
+  height: 12px
+
+.list-category__icon2
+  width: 39px
+  height: 30px
+
+.list-category__icon3
+  width: 31px
+
+.list-category__icon4
+  width: 32px
+  height: 32px
+
+.catalog-filter
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  .form-sorting
+    width: auto
+    justify-content: space-between
+    flex-wrap: nowrap
+    label
+      width: 135px
+      min-width: 135px
+      margin: 0 7px 0 0
+      &:last-child
+        margin: 0
+    button
+      width: 80px
+      margin: 0 0 0 13px
+  .label-select
+    margin: 0
+    max-width: 135px
+  .btn
+    border-radius: 5px
+  select
+    border-radius: 5px
+    font-size: 12px
+
+.sorting-item
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-size: 14px
+  .label-select
+    width: 178px
+    min-width: 178px
+    margin: 0 0 0 30px
+  select
+    font-size: 12px
+
+.btn-search-code
+  padding: 0 11px
+
+.mt-30
+  margin-top: 30px
+
+.card-product
+  width: 100%
+  background: #fff
+  box-shadow: 0 4px 16px rgba(25, 53, 127, 0.15)
+  border-radius: 10px
+  padding: 23px 52px 32px 19px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.card-product__head
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid #19357F
+    radius: 10px
+  padding: 10px 5px
+  overflow: hidden
+  width: 158px
+  height: 158px
+  min-width: 158px
+
+.card-product__footer
+  width: 175px
+
+
+.card-product__body
+  width: calc(100% - 175px - 158px)
+  padding: 0 0 0 49px
+
+.attention
+  display: flex
+  align-items: center
+  color: #FF8B25
+  font-size: 12px
+  margin: 30px 0 0
+
+.attention-icon
+  width: 14px
+  min-width: 14px
+  height: 14px
+  margin: 0 11px 0 0
+  fill: $accent
+
+.color-orange
+  color: $accent
+
+.status-availability
+  margin: 0 0 5px
+  text-transform: uppercase
+  font-size: 24px
+  font-weight: bold
+
+.price
+  font-size: 36px
+  font-weight: bold
+  color: $text
+
+.btn-group
+  width: 100%
+  justify-content: space-between
+  .btn
+    max-width: 80px
+    height: 32px
+    width: 100%
+    border-radius: 5px
+    margin: 7px 0 0
+    &:hover
+      color: #fff
+    &:last-child, &:first-child
+      border-radius: 5px
+    &:not(:last-child):not(.dropdown-toggle)
+      border-radius: 5px
+
+.name-product
+  font-size: 24px
+  font-weight: bold
+  text-transform: uppercase
+  color: $text
+
+.code-product
+  margin: 7px 0 19px
+  font-size: 18px
+
+.list-characteristics
+  color: #19357F
+  font-size: 14px
+  max-width: 250px
+  width: 100%
+  li
+    display: flex
+    align-items: center
+    justify-content: space-between
+  span
+    text-align: left
+    min-width: 100px
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 47px 0 58px
+
+.page-item
+  margin: 0 5px 0 0
+  &:last-child
+    margin: 0
+
+.page-item.active
+  .page-link
+    padding: 0
+    background: transparent
+    color: $accent
+
+.page-link
+  padding: 0
+  background: transparent
+  border: none
+    radius: 0
+  color: #19357F
+  font-size: 24px
+  font-weight: bold
+  text-transform: uppercase
+  &:hover
+    background: transparent
+    color: $accent
 
 @import "media"
 // Всегда в конце
